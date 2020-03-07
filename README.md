@@ -13,22 +13,65 @@ There 2 kinds of esp8266:
 
 *Note: Link download above
 
-After download and install, you plug-in the ESP and check Device Manage:
+After download and install, you plug-in the ESP and check Device Manage and check which COM the ESP does:
 
 <img src="https://imgur.com/XQ1uemr.png">
 
-#### Step 2 - Get A firmware
+Mine case is COM3.
+
+### Step 2 - Get a Firmware
 
 There are many kinds of  Esp8266's firmwares: AT Command, Lua script, microPython, Arduino, ...
 
 In this guide i'll use mircoPython.
 
-[miroPython](https://micropython.org/download)
+**Dowload:** [miroPython](https://micropython.org/download)
 
-#### Step 3 - Flash Firmmware to ESP
+### Step 3 - Flashing the Firmmware 
 
-#### Windows:
+**! Attention:**
 
-Download:
+Keep in mind that the ESP8266 needs to be ***put in to flash mode*** before you can flash a new firmware!
+
+**Puting Device Into Flash Mode**
+
+To enable ESP8266 firmware flashing GPIO0 pin must be pulled low before the device is reset. Conversely, for a normal boot, GPIO0 must be pulled high or floating.
+
+If you have a NodeMCU dev kit then you don't need to do anything, as the USB connection can pull GPIO0 low by asserting DTR and reset your board by asserting RTS.
+
+If you have an ESP-01 or other device without built-in USB, you will need to enable flashing yourself by pulling GPIO0 low or pressing a "flash" switch, while powering up or resetting the module.
+
+
+#### NodeMCU Flasher:
+
+**Download:**
 [NodeMCU Flasher](https://github.com/nodemcu/nodemcu-flasher)
 
+<ul>
+<li><b>Operation Tab</b></li>
+
+In **Operation** tab chose the ESP Port, you can check it at Device Manager:
+
+<img 
+<li><b>Config Tab</b></li>
+
+In **Config** Tab chose the firmware we downloaded from **Step 2**:  
+
+<img src ="https://i.imgur.com/F8GMwXI.png" >
+
+<li><b>Advanced Tab</b></li>
+
+In **Advanced** Tab set the baurdrate to 9600:  
+
+<img src="https://i.imgur.com/LrAB3gg.png">
+
+<li><b>Start </b></li>
+ Then the last step is start flashing the firmware to ESP:
+
+<img src="https://i.imgur.com/rbCUNjx.png">
+
+This will take a while.
+
+</ul>
+
+### Step 4 - Uploading Code
