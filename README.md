@@ -3,7 +3,7 @@ MicroPython on ESP8266
 
 # PART 1  GETTING STARTED WITH ESP8266
 
-<img src="https://imgur.com/QLv7y19.jpg" height="500" width="500">
+<img src="https://imgur.com/QLv7y19.jpg" height="500" width="450">
 
 ## Step 1 - Install Driver
 
