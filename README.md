@@ -75,3 +75,6 @@ This will take a while.
 </ul>
 
 ### Step 4 - Uploading Code
+
+**Download:** [ESPlorer](https://esp8266.ru/esplorer/#download)
+
