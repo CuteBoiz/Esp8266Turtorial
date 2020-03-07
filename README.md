@@ -3,7 +3,7 @@ MicroPython on ESP8266
 
 # PART 1  GETTING STARTED WITH ESP8266
 
-<img src="https://imgur.com/QLv7y19">
+<img src="https://imgur.com/QLv7y19.jpg">
 
 ## Step 1 - Install Driver
 
@@ -15,7 +15,7 @@ There 2 kinds of esp8266:
 
 After download and install, you plug-in the ESP and check Device Manage:
 
-<img src="https://imgur.com/XQ1uemr">
+<img src="https://imgur.com/XQ1uemr.png">
 
 ## Step 2 - Get A firmware
 
